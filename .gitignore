@@ -1,0 +1,36 @@
+# FXServer runtime and generated data
+server/cache/
+server/server-cache/
+server/server-cache-priv/
+server-data/cache/
+server-data/server-cache/
+server-data/server-cache-priv/
+cache/
+crashes/
+logs/
+*.log
+
+# Local secrets and live configuration
+server.cfg
+server-data/server.cfg
+*.secret
+.env
+.env.*
+!.env.example
+
+# Database dumps and local backups
+backups/
+*.sql.gz
+*.dump
+*.bak
+
+# Local tooling and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
