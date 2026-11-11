@@ -1,0 +1,21 @@
+# Copy this file to your LOCAL server.cfg and fill in your own values.
+# Never commit your real server.cfg or any license key/password.
+
+sv_hostname "Qbox Fjord Development"
+sets sv_projectName "Qbox Fjord"
+sets sv_projectDesc "Private development and testing server"
+sets tags "development,qbox"
+sets locale "en-US"
+
+# Replace locally with your own Cfx.re server registration key.
+sv_licenseKey "CHANGE_ME_LOCALLY"
+
+# Network settings. Adjust the port to match your host/firewall configuration.
+endpoint_add_tcp "0.0.0.0:30120"
+endpoint_add_udp "0.0.0.0:30120"
+
+# Database: replace USER, PASSWORD and DATABASE in your LOCAL copy only.
+# Ensure the MariaDB account and database exist before starting the server.
+set mysql_connection_string "mysql://USER:PASSWORD@127.0.0.1/DATABASE?charset=utf8mb4"
+
+# Keep txAdmin's web interface private. Do not forward its web port to the internet.
